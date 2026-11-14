@@ -1,0 +1,91 @@
+IT 205 / IT 205L - OBJECT-ORIENTED PROGRAMMING
+LABORATORY ACTIVITY 04: CLASSES AND OBJECTS
+
+TEST RESULTS
+
+Test 1: Create Multiple Book Objects
+
+Input:
+Book book1 = new Book("B001", "Java Programming");
+Book book2 = new Book("B002", "Object-Oriented Programming");
+Book book3 = new Book("B003", "Introduction to Computing");
+
+Expected Output:
+Three Book objects are created with different IDs and titles. Their initial status is AVAILABLE.
+
+Actual Output:
+All three Book objects were displayed with the correct information and AVAILABLE status.
+
+Result: PASSED
+
+
+Test 2: Borrow a Book
+
+Input:
+book1.borrowBook();
+
+Expected Output:
+Java Programming has been borrowed.
+Status changes to BORROWED.
+
+Actual Output:
+Java Programming has been borrowed.
+Status: BORROWED
+
+Result: PASSED
+
+
+Test 3: Return a Book
+
+Input:
+book1.returnBook();
+
+Expected Output:
+Java Programming has been returned.
+Status changes back to AVAILABLE.
+
+Actual Output:
+Java Programming has been returned.
+Status: AVAILABLE
+
+Result: PASSED
+
+
+Test 4: Display Object Information Using toString()
+
+Input:
+System.out.println(book1);
+
+Expected Output:
+The program displays the book ID, title, and status in a readable format.
+
+Actual Output:
+Book ID: B001
+Title: Java Programming
+Status: AVAILABLE
+
+Result: PASSED
+
+
+Test 5: Demonstrate Object References
+
+Input:
+Book a = book2;
+Book b = book2;
+a.title = "Updated Java Programming";
+System.out.println(b);
+
+Expected Output:
+Printing object b displays the updated title because both variables refer to the same object.
+
+Actual Output:
+Book ID: B002
+Title: Updated Java Programming
+Status: AVAILABLE
+
+Result: PASSED
+
+
+OVERALL RESULT:
+
+All five test scenarios were completed successfully. The program demonstrated classes, objects, constructors, methods, toString(), and object references.
